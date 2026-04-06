@@ -40,10 +40,26 @@ button {
 <a href="drinks.pdf">
 <button>Drink Menu</button>
 </a>
-<div class="footer">
-  <a href="https://instagram.com/interformlabs" target="_blank">
-    Powered by Interform Labs
-  </a>
+.footer {
+  position: fixed;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.65rem;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.footer a {
+  color: #C9A44C;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: opacity 0.3s ease;
+}
+
+.footer a:hover {
+  opacity: 0.9;
+}
 </div>
 </body>
 </html>
