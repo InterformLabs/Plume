@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plume Food</title>
+<link rel="icon" href="logo plume.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg-deep: #151f15;
+    --gold: #c9a96e; --gold-dim: rgba(201,169,110,0.1); --gold-line: rgba(201,169,110,0.25);
+    --white: #f0ece4; --white-dim: rgba(240,236,228,0.55);
+  }
+  html, body { width: 100%; min-height: 100%; background: var(--bg-deep); color: var(--white); font-family: 'Outfit', sans-serif; font-weight: 300; -webkit-text-size-adjust: 100%; }
+  body::before { content: ''; position: fixed; inset: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E"); pointer-events: none; z-index: 999; opacity: 0.5; }
+  .glow { position: fixed; top: -200px; left: 50%; transform: translateX(-50%); width: 100%; max-width: 600px; height: 400px; background: radial-gradient(ellipse, rgba(201,169,110,0.06) 0%, transparent 70%); pointer-events: none; z-index: 0; }
+  .wrap { position: relative; z-index: 1; width: 100%; max-width: 600px; margin: 0 auto; padding: 56px 24px 80px; }
+  .back { display: inline-flex; align-items: center; gap: 8px; font-size: 10px; letter-spacing: 0.25em; text-transform: uppercase; color: rgba(201,169,110,0.4); text-decoration: none; margin-bottom: 48px; transition: color 0.2s; }
+  .back svg { width: 14px; height: 14px; stroke: currentColor; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  .page-footer { text-align: center; margin-top: 56px; padding-top: 32px; border-top: 1px solid var(--gold-line); }
+  .page-footer a { font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: rgba(201,169,110,0.25); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<div class="wrap">
+
+  <a class="back" href="index.html">
+    <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+    Back
+  </a>
+
+  <div style="text-align:center;padding:48px 0 32px;">
+    <div style="width:1px;height:40px;background:linear-gradient(to bottom,transparent,rgba(201,169,110,0.25));margin:0 auto 28px;"></div>
+    <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(32px,8vw,48px);font-weight:300;letter-spacing:0.2em;text-transform:uppercase;color:var(--white);margin-bottom:8px;">Food</div>
+    <div style="font-family:'Cormorant Garamond',serif;font-size:15px;font-style:italic;color:var(--gold);opacity:0.7;margin-bottom:8px;">Plume Cocktail Bar</div>
+    <div style="width:40px;height:1px;background:rgba(201,169,110,0.25);margin:20px auto 24px;"></div>
+    <p style="font-family:'Cormorant Garamond',serif;font-size:14px;font-style:italic;line-height:1.8;color:rgba(240,236,228,0.4);max-width:280px;margin:0 auto 40px;">Thoughtful plates. Shared moments.<br>Food that complements the evening &mdash; easy to share, easy to savour.</p>
+    <a href="plume-food.pdf" target="_blank" style="display:inline-flex;align-items:center;gap:12px;padding:18px 32px;border:1px solid rgba(201,169,110,0.4);background:rgba(201,169,110,0.08);text-decoration:none;-webkit-tap-highlight-color:transparent;">
+      <span style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:400;letter-spacing:0.08em;color:var(--white);">View Full Menu</span>
+      <svg viewBox="0 0 24 24" style="width:16px;height:16px;stroke:var(--gold);stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round;opacity:0.7;"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+    </a>
+    <p style="margin-top:16px;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(201,169,110,0.25);">Opens as PDF</p>
+  </div>
+
+  <div class="page-footer">
+    <a href="https://interformlabs.com" target="_blank">Powered by Interform</a>
+  </div>
+
+</div>
+</body>
+</html>
